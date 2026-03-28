@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sobre mi</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+<a href="index.html">
+<img src="logo.png" alt="logo">
+</a>
+</div>
+
+<nav>
+
+<a href="gallery.html">GALERIA</a>
+<a href="about.html">SOBRE MI</a>
+<a href="contact.html">CONTACTO</a>
+
+</nav>
+
+</header>
+
+
+
+<section class="about">
+
+
+<img src="img/about.jpg" class="aboutPhoto" alt="Gonzalo Valdés">
+
+
+<div class="aboutText">
+
+<h1>Gonzalo Valdés</h1>
+
+<p>
+
+Soy un joven apasionado por la fotografía y el mundo audiovisual.
+Mi trabajo se centra en capturar momentos reales, movimiento y emoción,
+buscando siempre una estética limpia, elegante y atemporal.
+
+Mi interés principal se encuentra en el automovilismo,
+la fotografía urbana y los eventos tradicionales,
+donde la luz y el instante juegan un papel fundamental.
+
+Cada imagen forma parte de una búsqueda constante
+por transmitir sensaciones a través de la composición,
+el contraste y la narrativa visual.
+
+</p>
+
+</div>
+
+
+</section>
+
+
+
+<audio id="clickSound" src="click.mp3"></audio>
+
+
+<script>
+
+document.querySelectorAll("a").forEach(link=>{
+
+link.addEventListener("click",()=>{
+
+let s = document.getElementById("clickSound")
+
+if(s){
+s.currentTime = 0
+s.play()
+}
+
+})
+
+})
+
+</script>
+
+
+</body>
+</html>
